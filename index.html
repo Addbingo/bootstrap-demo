@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>感谢慕课教学</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!--   H5标签及css3的media -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+      body{
+        padding-top: 70px;
+        padding-bottom: 50px;
+      }
+      .carousel{
+        height: 500px;
+        background-color: #000;
+        bottom: 20px;
+        margin-bottom: 50px;
+      }
+      .carousel .item{
+        height: 500px;
+        background-color: #000;
+      }
+      .carousel img{
+        width: 100%;
+      }
+      .carousel-caption p{
+        margin-bottom: 20px;
+        font-size:20px;
+        line-height: 1.8;
+      }
+      .col-md-3 img{
+        height: 100px;
+        width: 100px;
+      }
+      /*.tab-content img{
+        height: 110px;
+        width: 110px;
+      }*/
+      #other-container .col-md-3{
+        text-align: center;
+      }
+      hr.divider{
+        margin: 40px 0;
+      }
+      .feature{
+        padding: 30px 0;
+      }
+      .feature-heading{
+        font-size: 50px;
+        color: #2a6496;
+        margin-top: 20px;
+      }
+      .feature-heading .text-muted{
+      	font-size: 28px;
+      	color: #999;
+      }
+
+
+    </style>
+  </head>
+  <body>
+
+<!-- 导航条设置 -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+      <div class="container"><!-- 自适应设置 -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#demo-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">动漫</a>
+        </div>
+        <div id="demo-navbar"> <!-- 此id用于菜单定位 与上面的data-target要一致，响应式 才有效果-->
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">综述 </a></li>
+            <li><a href="#">简述</a></li>
+            <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">详情 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#q1">火影</a></li>
+                <li><a href="#q2">海贼王</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#q3">秦时明月</a></li>
+                <li><a href="#q4">那你那兔</a></li>
+              </ul>
+            </li>
+            <li><a href="#" data-toggle="modal" data-target="#about">关于</a></li>
+          </ul>
+          </div>
+      </div>
+      </nav>
+     
+
+ <!--图片滚动 -->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators点点 -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        </ol>
+        <!-- Wrapper for slides 组件内容-->
+        <div class="carousel-inner" role="listbox">
+
+          <div class="item active">
+            <img src="imgs/huo.jpg" alt="2-slide">
+            <div class="carousel-caption">
+              <h1>火影忍者</h1>
+              <p>《火影忍者》是日本漫画家岸本齐史的代表作，作品于1999年开始在《周刊少年JUMP》上连载，于2014年11月10日发售的JUMP第50号完结</p>
+              <p><a class="btn btn-lg btn-primary" target="_blank" href="http://baike.baidu.com/link?url=7MDTCUZ83cFZSJUicprZI4MFXwP28MibpQi3LFqkGsalx3fnV5AZdmuqOOkhs2VopbwTL1bbzaaggqkQeXGgXLBnoMlla9kM3Rxs6k9g0x-B9pbE8R09XbRjp8uwjykB">百度百科</a></p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="imgs/haizei.jpg" alt="4-slide">
+            <div class="carousel-caption">
+              <h1>海贼王</h1>
+              <p>《ONE PIECE》（航海王）简称“OP”，是日本漫画家尾田荣一郎作画的少年漫画作品。在《周刊少年Jump》1997年34号开始连载</p>
+              <p></p><a class="btn btn-lg btn-primary" href="">百度百科</a></p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="imgs/qinshi.jpg" alt="...">
+            <div class="carousel-caption">
+              <h1>秦时明月</h1>
+              <p>《秦时明月》系列是由中国杭州玄机科技信息技术有限公司制作的3D武侠电视/网络动画，于2007年春节期间起在中国全国各地正式首映</p>
+              <p><a class="btn btn-lg btn-primary" href="">百度百科</a></p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="imgs/tuzi.jpg" alt="...">
+            <div class="carousel-caption">
+              <h1>那年那兔</h1>
+              <p>《那年那兔那些事儿》是由国内军迷网友逆光飞行所创作的爱国主义题材的漫画</p>
+              <p></p><a class="btn btn-lg btn-primary" href="">百度百科</a></p>
+            </div>
+          </div>
+        </div>
+        <!-- Controls 箭头-->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">上一页</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">下一页</span>
+        </a>
+    </div>
+
+  <!--  网格 -->
+    <div class="container" id="other-container">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="imgs/huoyingtou.jpg" alt="没什么">
+          <h3>火影</h3>
+          <p>saddsad</p>
+          <p><a class="btn btn-info" href="" class="thumbnail">跳转</a></p>
+        </div>
+        <div class="col-md-3">
+          <img src="imgs/qinshitou.jpg" alt="没什么">
+          <h3>秦时</h3>
+          <p>saddsad</p>
+          <p><a class="btn btn-info" href="" class="thumbnail">跳转</a></p>
+        </div>
+        <div class="col-md-3">
+          <img src="imgs/haizeitou.jpg" alt="没什么">
+          <h3>海贼</h3>
+          <p>saddsad</p>
+          <p><a class="btn btn-info" href="" class="thumbnail">跳转</a></p>
+        </div>
+        <div class="col-md-3">
+          <img src="imgs/tuzitou.jpg" alt="没什么">
+          <h3>那兔</h3>
+          <p>saddsad</p>
+          <p><a class="btn btn-info" href="" class="thumbnail">跳转</a></p>
+        </div>
+      </div>
+      <hr class="divider"> 
+
+     <!-- 标签 -->
+     <ul class="nav nav-tabs" id="tab-list"><!-- 此id用于菜单定位 -->
+       <li class="active"><a href="#q1" data-toggle="tab">火影</a></li>
+       <li><a href="#q2" data-toggle="tab">海贼</a></li>
+       <li><a href="#q3" data-toggle="tab">秦时</a></li>
+       <li><a href="#q4" data-toggle="tab">兔子</a></li>
+     </ul>
+     <div class="tab-content">
+      <div class="tab-pane active" id="q1">
+        <div class="row feature">
+          <div class="col-md-7">
+            <h3 class="feature-heading">火影<span class="text-muted">日本动漫</span></h3>
+            <p>故事成功地将原本隐藏在黑暗中，用世界上最强大的毅力和最艰辛的努力去做最密不可宣和隐讳残酷的事情的忍者，描绘成了太阳下最值得骄傲最光明无限的职业。在岸本齐史笔下的忍者世界中，每一位年轻的忍者都在开拓着属于自己的忍道。</p>
+          </div>
+          <div class="col-md-5">
+            <img src="imgs/huoyingtou.jpg" alt="没什么">
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="q2">
+        <div class="row feature">
+          <div class="col-md-7">
+            <h3 class="feature-heading">海贼<span class="text-muted">日本动漫</span></h3>
+            <p>改编的电视动画《航海王》于1999年10月20日起在富士电视台首播。截至2015年6月15日，《ONE PIECE》以日本本土累计发行了3亿2086万6000本，被吉尼斯世界纪录官方认证为“世界上发行量最高的单一作者创作的系列漫画”。</p>
+          </div>
+          <div class="col-md-5">
+            <img src="imgs/haizeitou.jpg" alt="没什么">
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="q3">
+        <div class="row feature">
+          <div class="col-md-7">
+            <h3 class="feature-heading">秦时<span class="text-muted">国产动漫</span></h3>
+            <p >该系列灵感来源于温世仁原著小说。时代背景从秦始皇兼并六国，建立中国首个帝国开始，到咸阳被楚军攻陷结束，时间跨度30年(包括回忆)，讲述一个体内流淌英雄之血的少年——荆天明，最终成长为盖世英雄，凭一己之力改变历史进程的热血励志故事（来源：官网[1]  ）。剧情并非采用一部一个剧情的系列剧形式，而是连续剧形式。剧情融武侠、历史、奇幻于一体，融入众多中国元素，引领观众亲历两千年前风起云涌、瑰丽多姿的古中国世界，在浓郁的中国风中注入鲜明的时代感。</p>
+          </div>
+          <div class="col-md-5">
+            <img src="imgs/qinshitou.jpg" alt="没什么">
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="q4">
+        <div class="row feature">
+          <div class="col-md-7">
+            <h3 class="feature-heading">那兔<span class="text-muted">国产动漫</span></h3>
+            <p>《那年那兔那些事儿》是由国内军迷网友逆光飞行所创作的爱国主义题材的漫画。
+漫画将中国近现代历史特别是中华人民共和国建国之前及建国以来的一些军事和外交的重大事件通过戏说和风趣的风格，以动漫的形式表现出来。</p>
+          </div>
+          <div class="col-md-5">
+            <img src="imgs/tuzitou.jpg" alt="没什么">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+    <footer>
+      <p class="pull-right"><a href="#top">回到顶部</a></p>
+      <p>这里是底部介绍</p>
+    </footer>
+
+    </div><!-- contianer -->
+
+  
+  
+    <!-- 关于 -->
+  <div class="modal fade" tabindex="-1" id="about">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">关于</h4>
+        </div>
+        <div class="modal-body">
+          <p>关于这个页面&hearts;&hearts;&hearts;</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">ok</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("#demo-navbar .dropdown-menu a").click(function(){
+          var href=$(this).attr("href");
+          $("#tab-list a[href='"+href+"']").tab("show");
+        })
+      })
+    </script>
+
+  </body>
+</html>
